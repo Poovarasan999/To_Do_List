@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantomics Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1>QUANTOMICS ACADEMY REGISTRATION FORM</h1>
+
+  <div class="wrap">
+    <div class="form-box">
+      <form id="studentForm" autocomplete="off">
+        <table class="form-table">
+          <tr>
+            <td class="label">Name</td>
+            <td><input id="name" type="text" placeholder="Enter name" required /></td>
+          </tr>
+          <tr>
+            <td class="label">Age</td>
+            <td><input id="age" type="number" min="1" max="120" placeholder="Enter age" required /></td>
+          </tr>
+          <tr>
+            <td class="label">Gender</td>
+            <td>
+              <div class="gender">
+                <label><input type="radio" name="gender" value="Male" required /> Male</label>
+                <label><input type="radio" name="gender" value="Female" required /> Female</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">Course</td>
+            <td>
+              <select id="course" required>
+                <option value="" selected disabled>Select course</option>
+                <option>Quantum Field Theory</option>
+                <option>Advanced Quantum Mechanics</option>
+                <option>Quantum Electrodynamics (QED)</option>
+                <option>Quantum Gravity</option>
+                <option>Quantum Information</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">E-mail</td>
+            <td><input id="email" type="email" placeholder="example@gmail.com" required /></td>
+          </tr>
+          <tr class="save-row">
+            <td colspan="2"><button class="btn-save" type="submit">Save</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div class="note">Click “Save” to add to the table. Use “Delete” to remove a row.</div>
+
+    <table class="data">
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>AGE</th>
+          <th>COURSE</th>
+          <th>GENDER</th>
+          <th>EMAIL</th>
+          <th>ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
