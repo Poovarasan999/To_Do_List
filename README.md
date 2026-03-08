@@ -38,7 +38,7 @@ todo-list/
 
 Clone the repository
 
-git clone https://github.com/your-username/todo-list.git
+git clone https://poovarasan999.github.io/To_Do_List/
 
 Open the project folder
 
